@@ -10,6 +10,9 @@
 		5CB168F02178F78600980C94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB168EF2178F78600980C94 /* AppDelegate.swift */; };
 		5CB168F72178F78A00980C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB168F62178F78A00980C94 /* Assets.xcassets */; };
 		5CB168FA2178F78A00980C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB168F82178F78A00980C94 /* LaunchScreen.storyboard */; };
+		5CB16902217AF7F300980C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB16901217AF7F300980C94 /* Main.storyboard */; };
+		5CB16904217AF81F00980C94 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16903217AF81F00980C94 /* Registration.swift */; };
+		5CB16906217B1B6000980C94 /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16905217B1B6000980C94 /* AddRegistrationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +21,9 @@
 		5CB168F62178F78A00980C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CB168F92178F78A00980C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CB168FB2178F78A00980C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB16901217AF7F300980C94 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5CB16903217AF81F00980C94 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		5CB16905217B1B6000980C94 /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				5CB168EF2178F78600980C94 /* AppDelegate.swift */,
+				5CB16901217AF7F300980C94 /* Main.storyboard */,
+				5CB16903217AF81F00980C94 /* Registration.swift */,
+				5CB16905217B1B6000980C94 /* AddRegistrationTableViewController.swift */,
 				5CB168F62178F78A00980C94 /* Assets.xcassets */,
 				5CB168F82178F78A00980C94 /* LaunchScreen.storyboard */,
 				5CB168FB2178F78A00980C94 /* Info.plist */,
@@ -116,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB16902217AF7F300980C94 /* Main.storyboard in Resources */,
 				5CB168FA2178F78A00980C94 /* LaunchScreen.storyboard in Resources */,
 				5CB168F72178F78A00980C94 /* Assets.xcassets in Resources */,
 			);
@@ -128,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB16906217B1B6000980C94 /* AddRegistrationTableViewController.swift in Sources */,
+				5CB16904217AF81F00980C94 /* Registration.swift in Sources */,
 				5CB168F02178F78600980C94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
