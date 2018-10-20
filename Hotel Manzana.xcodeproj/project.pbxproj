@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5CB168F02178F78600980C94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB168EF2178F78600980C94 /* AppDelegate.swift */; };
-		5CB168F22178F78600980C94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB168F12178F78600980C94 /* ViewController.swift */; };
-		5CB168F52178F78600980C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB168F32178F78600980C94 /* Main.storyboard */; };
 		5CB168F72178F78A00980C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB168F62178F78A00980C94 /* Assets.xcassets */; };
 		5CB168FA2178F78A00980C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB168F82178F78A00980C94 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,8 +15,6 @@
 /* Begin PBXFileReference section */
 		5CB168EC2178F78500980C94 /* Hotel Manzana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hotel Manzana.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB168EF2178F78600980C94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5CB168F12178F78600980C94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5CB168F42178F78600980C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CB168F62178F78A00980C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CB168F92178F78A00980C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CB168FB2178F78A00980C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,8 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				5CB168EF2178F78600980C94 /* AppDelegate.swift */,
-				5CB168F12178F78600980C94 /* ViewController.swift */,
-				5CB168F32178F78600980C94 /* Main.storyboard */,
 				5CB168F62178F78A00980C94 /* Assets.xcassets */,
 				5CB168F82178F78A00980C94 /* LaunchScreen.storyboard */,
 				5CB168FB2178F78A00980C94 /* Info.plist */,
@@ -124,7 +118,6 @@
 			files = (
 				5CB168FA2178F78A00980C94 /* LaunchScreen.storyboard in Resources */,
 				5CB168F72178F78A00980C94 /* Assets.xcassets in Resources */,
-				5CB168F52178F78600980C94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +128,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CB168F22178F78600980C94 /* ViewController.swift in Sources */,
 				5CB168F02178F78600980C94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +135,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5CB168F32178F78600980C94 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5CB168F42178F78600980C94 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5CB168F82178F78A00980C94 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,8 +266,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2EB4KC7497;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Z256VMH9HM;
 				INFOPLIST_FILE = "Hotel Manzana/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +275,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dum22ns90.com1004.Hotel-Manzana";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 2in1;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +285,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2EB4KC7497;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Z256VMH9HM;
 				INFOPLIST_FILE = "Hotel Manzana/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +294,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dum22ns90.com1004.Hotel-Manzana";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 2in1;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
