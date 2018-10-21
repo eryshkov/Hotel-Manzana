@@ -53,6 +53,7 @@ class AddRegistrationTableViewController: UITableViewController {
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
         emailTextField.delegate = self
+        wifiCostLabel.text = String(wifiCostPerDay)
     }
     
     func updateDateViews() {
@@ -140,18 +141,35 @@ class AddRegistrationTableViewController: UITableViewController {
     
     // MARK: - IBActions
     @IBAction func doneBarButtonPressed(_ sender: UIBarButtonItem) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
         let email = emailTextField.text ?? ""
-        let checkInDate = checkInDatePicker.date
-        let checkOutDate = checkOutDatePicker.date
+        let checkInDate = dateFormatter.string(from: checkInDatePicker.date)
+        let checkOutDate = dateFormatter.string(from: checkOutDatePicker.date)
+        let adultsNumber = adultsNumberLabel.text ?? ""
+        let childrenNumber = childrenNumberLabel.text ?? ""
+        let wifiCost = isWifiNeeded.isOn ? "$\(wifiCostPerDay) за день" : "Без Wi-Fi"
+        let roomType = roomTypeLabel.text ?? ""
         
-        print(#function)
-        print("First name \(firstName)")
-        print("Last name \(lastName)")
-        print("email \(email)")
-        print("Check In: \(checkInDate)")
-        print("Check Out: \(checkOutDate)")
+        let order = """
+        Имя: \(firstName.isEmpty ? "Без имени" : firstName)
+        Фамилия: \(lastName.isEmpty ? "Без фамилии" : lastName)
+        email: \(email.isEmpty ? "Без e-mail" : email)
+        Дата заезда: \(checkInDate)
+        Дата выезда: \(checkOutDate)
+        Количество взрослых: \(adultsNumber)
+        Количество детей: \(childrenNumber)
+        Wi-Fi: \(wifiCost)
+        Категория номера: \(roomType.isEmpty ? "Не выбрана" : roomType)
+        """
+        
+        let alertController = UIAlertController(title: "Ваш заказ", message: order, preferredStyle: .alert)
+        let actionOK = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(actionOK)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
