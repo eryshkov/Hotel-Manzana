@@ -24,7 +24,7 @@ extension AddRegistrationTableViewController: UITextFieldDelegate{
             for someView in getAllSubviews(rootView: cell) {
                 if let someTextField = someView as? UITextField {
                     someTextField.delegate = self
-                    //                        print("Text field detected")
+//                                            print("Text field detected")
                 }
             }
             
@@ -37,7 +37,7 @@ extension AddRegistrationTableViewController: UITextFieldDelegate{
             
             if let someTextField = someView as? UITextField {
                 someTextField.delegate = self
-                //                print("Text field detected")
+//                                print("Text field detected")
             }
             if let someTableView = someView as? UITableView {
                 delegateAllTextFieldsAt(tableView: someTableView)
