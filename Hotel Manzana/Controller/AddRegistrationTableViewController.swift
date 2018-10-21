@@ -18,6 +18,14 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBOutlet weak var checkOutDateLabel: UILabel!
     @IBOutlet weak var checkOutDatePicker: UIDatePicker!
     
+    @IBOutlet weak var adultsNumberLabel: UILabel!
+    @IBOutlet weak var childrenNumberLabel: UILabel!
+    @IBOutlet weak var wifiCostLabel: UILabel!
+    @IBOutlet weak var roomTypeLabel: UILabel!
+    
+    
+    
+    
     let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
     let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section: 1)
     
@@ -57,6 +65,7 @@ class AddRegistrationTableViewController: UITableViewController {
         
     }
     
+    // MARK: - TableView Delegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath {
         case checkInDatePickerCellIndexPath:
@@ -102,6 +111,7 @@ class AddRegistrationTableViewController: UITableViewController {
         tableView.endUpdates()
     }
 
+    // MARK: - IBActions
     @IBAction func doneBarButtonPressed(_ sender: UIBarButtonItem) {
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
@@ -121,5 +131,14 @@ class AddRegistrationTableViewController: UITableViewController {
         updateDateViews()
     }
     
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        if sender.tag == 100 {
+            adultsNumberLabel.text = String(Int(sender.value))
+        }
+        
+        if sender.tag == 200 {
+            childrenNumberLabel.text = String(Int(sender.value))
+        }
+    }
     
 }

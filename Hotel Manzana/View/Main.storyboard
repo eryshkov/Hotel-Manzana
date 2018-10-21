@@ -205,16 +205,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D39-Vh-61M">
-                                                    <rect key="frame" x="246.5" y="7.5" width="112.5" height="29"/>
+                                                    <rect key="frame" x="249" y="7.5" width="110" height="29"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oug-ua-pA4">
-                                                            <rect key="frame" x="0.0" y="0.0" width="10.5" height="29"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oug-ua-pA4">
+                                                            <rect key="frame" x="0.0" y="0.0" width="8" height="29"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Z7L-sk-ZNl">
-                                                            <rect key="frame" x="18.5" y="0.0" width="94" height="29"/>
+                                                        <stepper opaque="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z7L-sk-ZNl">
+                                                            <rect key="frame" x="16" y="0.0" width="94" height="29"/>
+                                                            <connections>
+                                                                <action selector="stepperValueChanged:" destination="gVj-5n-Wwb" eventType="valueChanged" id="YLi-8Z-oNp"/>
+                                                            </connections>
                                                         </stepper>
                                                     </subviews>
                                                 </stackView>
@@ -250,8 +253,11 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xqm-cM-Mkx">
+                                                        <stepper opaque="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="xqm-cM-Mkx">
                                                             <rect key="frame" x="18.5" y="0.0" width="94" height="29"/>
+                                                            <connections>
+                                                                <action selector="stepperValueChanged:" destination="gVj-5n-Wwb" eventType="valueChanged" id="tDo-Co-kf6"/>
+                                                            </connections>
                                                         </stepper>
                                                     </subviews>
                                                 </stackView>
@@ -313,7 +319,7 @@
                                         <rect key="frame" x="0.0" y="619" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PfU-UU-vlX" id="xTh-9j-gXJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Номер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-RO-34S">
@@ -353,13 +359,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="adultsNumberLabel" destination="oug-ua-pA4" id="6gB-aA-dCJ"/>
                         <outlet property="checkInDateLabel" destination="pdh-ZU-8ao" id="4uk-Tr-b3s"/>
                         <outlet property="checkInDatePicker" destination="hs7-5C-PBf" id="OsV-rH-oOr"/>
                         <outlet property="checkOutDateLabel" destination="PXn-W1-peY" id="czq-ap-DHi"/>
                         <outlet property="checkOutDatePicker" destination="pZy-Hs-Icu" id="4no-uW-7hF"/>
+                        <outlet property="childrenNumberLabel" destination="HdV-Z1-t7L" id="1Tv-JV-VXJ"/>
                         <outlet property="emailTextField" destination="DDL-XV-Sjl" id="kbj-j7-qCn"/>
                         <outlet property="firstNameTextField" destination="UPC-Q0-MpS" id="AWJ-Yg-Qpw"/>
                         <outlet property="lastNameTextField" destination="XQO-Rk-0CZ" id="sPG-Xr-Ow1"/>
+                        <outlet property="roomTypeLabel" destination="gf4-53-eUz" id="LsX-nj-rQY"/>
+                        <outlet property="wifiCostLabel" destination="0JR-o4-cwY" id="r41-nJ-HgQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUN-qk-2Wa" userLabel="First Responder" sceneMemberID="firstResponder"/>
