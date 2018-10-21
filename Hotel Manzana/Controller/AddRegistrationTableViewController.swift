@@ -130,6 +130,14 @@ class AddRegistrationTableViewController: UITableViewController {
         }
     }
     
+    // MARK: - Navigation
+    @IBAction func unwindToAddRegistrationVC(_ unwindSegue: UIStoryboardSegue) {
+        if let sourceViewController = unwindSegue.source as? RoomSelectTableViewController {
+            roomTypeLabel.text = sourceViewController.selectedRoom?.shortName
+        }
+        
+    }
+    
     // MARK: - IBActions
     @IBAction func doneBarButtonPressed(_ sender: UIBarButtonItem) {
         let firstName = firstNameTextField.text ?? ""

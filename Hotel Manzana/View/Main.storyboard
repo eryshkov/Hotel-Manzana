@@ -406,8 +406,12 @@
                         </connections>
                     </tableView>
                     <size key="freeformSize" width="250" height="250"/>
+                    <connections>
+                        <segue destination="Yzr-Ml-axV" kind="unwind" identifier="unwindToAddRegistrationVC" unwindAction="unwindToAddRegistrationVC:" id="VWB-sx-2Wi"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxt-35-RsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Yzr-Ml-axV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="960" y="-5"/>
         </scene>
