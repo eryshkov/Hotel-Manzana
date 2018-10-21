@@ -29,6 +29,7 @@ class AddRegistrationTableViewController: UITableViewController {
     let wifiCostPerDay = 10
     let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
     let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section: 1)
+    let roomTypeSelect = IndexPath(row: 0, section: 4)
     
     var isCheckInDatePickerShown: Bool = false {
         didSet {
@@ -104,6 +105,8 @@ class AddRegistrationTableViewController: UITableViewController {
             } else {
                 isCheckOutDatePickerShown = true
             }
+        case (roomTypeSelect.section, roomTypeSelect.row):
+            performSegue(withIdentifier: "RoomTypeSelect", sender: nil)
         default:
             isCheckOutDatePickerShown = false
             isCheckInDatePickerShown = false
@@ -112,6 +115,21 @@ class AddRegistrationTableViewController: UITableViewController {
         tableView.endUpdates()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "RoomTypeSelect":
+            let dvc = segue.destination as! RoomSelectTableViewController
+            dvc.modalPresentationStyle = .popover
+            
+            let popOverDVC = dvc.popoverPresentationController
+            popOverDVC?.delegate = self
+            popOverDVC?.sourceView = self.roomTypeLabel
+            popOverDVC?.sourceRect = CGRect(x: roomTypeLabel.bounds.midX, y: roomTypeLabel.bounds.minY, width: 0, height: 0)
+        default:
+            break
+        }
+    }
+    
     // MARK: - IBActions
     @IBAction func doneBarButtonPressed(_ sender: UIBarButtonItem) {
         let firstName = firstNameTextField.text ?? ""
@@ -142,4 +160,11 @@ class AddRegistrationTableViewController: UITableViewController {
         }
     }
     
+}
+
+extension AddRegistrationTableViewController: UIPopoverPresentationControllerDelegate {
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
 }

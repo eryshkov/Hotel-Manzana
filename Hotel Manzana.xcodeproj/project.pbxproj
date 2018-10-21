@@ -16,6 +16,7 @@
 		5CB16928217C93ED00980C94 /* KeyboardHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16927217C93ED00980C94 /* KeyboardHide.swift */; };
 		5CB1692E217CAC9A00980C94 /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB1692D217CAC9A00980C94 /* RoomType.swift */; };
 		5CB16930217CACEE00980C94 /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB1692F217CACEE00980C94 /* Rooms.swift */; };
+		5CB16932217CDA0800980C94 /* RoomSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16931217CDA0800980C94 /* RoomSelectTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5CB16927217C93ED00980C94 /* KeyboardHide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHide.swift; sourceTree = "<group>"; };
 		5CB1692D217CAC9A00980C94 /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
 		5CB1692F217CACEE00980C94 /* Rooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
+		5CB16931217CDA0800980C94 /* RoomSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSelectTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				5CB16905217B1B6000980C94 /* AddRegistrationTableViewController.swift */,
+				5CB16931217CDA0800980C94 /* RoomSelectTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CB16928217C93ED00980C94 /* KeyboardHide.swift in Sources */,
+				5CB16932217CDA0800980C94 /* RoomSelectTableViewController.swift in Sources */,
 				5CB16906217B1B6000980C94 /* AddRegistrationTableViewController.swift in Sources */,
 				5CB16930217CACEE00980C94 /* Rooms.swift in Sources */,
 				5CB1692E217CAC9A00980C94 /* RoomType.swift in Sources */,
