@@ -26,18 +26,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UPC-Q0-MpS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UPC-Q0-MpS">
+                                                    <rect key="frame" x="16" y="2" width="343" height="39.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="UPC-Q0-MpS" firstAttribute="leading" secondItem="P8n-b4-nNR" secondAttribute="leading" id="ac6-Fn-nQI"/>
-                                                <constraint firstAttribute="bottom" secondItem="UPC-Q0-MpS" secondAttribute="bottom" id="dg9-WS-qOG"/>
-                                                <constraint firstAttribute="trailing" secondItem="UPC-Q0-MpS" secondAttribute="trailing" id="ol9-4Q-xAm"/>
-                                                <constraint firstItem="UPC-Q0-MpS" firstAttribute="top" secondItem="P8n-b4-nNR" secondAttribute="top" id="rRp-2D-IlG"/>
+                                                <constraint firstAttribute="bottom" secondItem="UPC-Q0-MpS" secondAttribute="bottom" constant="2" id="ONB-Nu-5Yc"/>
+                                                <constraint firstItem="UPC-Q0-MpS" firstAttribute="top" secondItem="P8n-b4-nNR" secondAttribute="top" constant="2" id="QEV-sE-TrB"/>
+                                                <constraint firstAttribute="trailing" secondItem="UPC-Q0-MpS" secondAttribute="trailing" constant="16" id="mR0-8V-BkR"/>
+                                                <constraint firstItem="UPC-Q0-MpS" firstAttribute="leading" secondItem="P8n-b4-nNR" secondAttribute="leading" constant="16" id="p1w-ic-ZSS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -48,18 +48,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQO-Rk-0CZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQO-Rk-0CZ">
+                                                    <rect key="frame" x="16" y="2" width="343" height="39.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="XQO-Rk-0CZ" secondAttribute="bottom" id="8RS-5n-mnm"/>
-                                                <constraint firstItem="XQO-Rk-0CZ" firstAttribute="leading" secondItem="PyT-a4-gJd" secondAttribute="leading" id="SMT-H6-Pf8"/>
-                                                <constraint firstAttribute="trailing" secondItem="XQO-Rk-0CZ" secondAttribute="trailing" id="ZsS-0n-176"/>
-                                                <constraint firstItem="XQO-Rk-0CZ" firstAttribute="top" secondItem="PyT-a4-gJd" secondAttribute="top" id="h4D-0Z-zmH"/>
+                                                <constraint firstItem="XQO-Rk-0CZ" firstAttribute="top" secondItem="PyT-a4-gJd" secondAttribute="top" constant="2" id="0bt-sk-0ey"/>
+                                                <constraint firstAttribute="trailing" secondItem="XQO-Rk-0CZ" secondAttribute="trailing" constant="16" id="MkQ-Fd-SpG"/>
+                                                <constraint firstAttribute="bottom" secondItem="XQO-Rk-0CZ" secondAttribute="bottom" constant="2" id="UV9-Be-CHb"/>
+                                                <constraint firstItem="XQO-Rk-0CZ" firstAttribute="leading" secondItem="PyT-a4-gJd" secondAttribute="leading" constant="16" id="d46-J2-AlA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -70,18 +70,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDL-XV-Sjl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDL-XV-Sjl">
+                                                    <rect key="frame" x="16" y="2" width="343" height="39.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="DDL-XV-Sjl" secondAttribute="bottom" id="DRZ-CU-k4g"/>
-                                                <constraint firstItem="DDL-XV-Sjl" firstAttribute="top" secondItem="E4C-cD-YTy" secondAttribute="top" id="Jgm-LF-XSf"/>
-                                                <constraint firstAttribute="trailing" secondItem="DDL-XV-Sjl" secondAttribute="trailing" id="au4-72-pkt"/>
-                                                <constraint firstItem="DDL-XV-Sjl" firstAttribute="leading" secondItem="E4C-cD-YTy" secondAttribute="leading" id="gRf-Qv-zc2"/>
+                                                <constraint firstAttribute="trailing" secondItem="DDL-XV-Sjl" secondAttribute="trailing" constant="16" id="FOv-97-ahi"/>
+                                                <constraint firstAttribute="bottom" secondItem="DDL-XV-Sjl" secondAttribute="bottom" constant="2" id="d5M-pD-MRA"/>
+                                                <constraint firstItem="DDL-XV-Sjl" firstAttribute="top" secondItem="E4C-cD-YTy" secondAttribute="top" constant="2" id="mt7-zj-Vdi"/>
+                                                <constraint firstItem="DDL-XV-Sjl" firstAttribute="leading" secondItem="E4C-cD-YTy" secondAttribute="leading" constant="16" id="yGY-Ju-el5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

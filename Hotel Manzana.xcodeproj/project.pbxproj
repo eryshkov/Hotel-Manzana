@@ -13,6 +13,7 @@
 		5CB16902217AF7F300980C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB16901217AF7F300980C94 /* Main.storyboard */; };
 		5CB16904217AF81F00980C94 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16903217AF81F00980C94 /* Registration.swift */; };
 		5CB16906217B1B6000980C94 /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16905217B1B6000980C94 /* AddRegistrationTableViewController.swift */; };
+		5CB16928217C93ED00980C94 /* KeyboardHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16927217C93ED00980C94 /* KeyboardHide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5CB16901217AF7F300980C94 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5CB16903217AF81F00980C94 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		5CB16905217B1B6000980C94 /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
+		5CB16927217C93ED00980C94 /* KeyboardHide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,47 @@
 			isa = PBXGroup;
 			children = (
 				5CB168EF2178F78600980C94 /* AppDelegate.swift */,
-				5CB16901217AF7F300980C94 /* Main.storyboard */,
-				5CB16903217AF81F00980C94 /* Registration.swift */,
-				5CB16905217B1B6000980C94 /* AddRegistrationTableViewController.swift */,
 				5CB168F62178F78A00980C94 /* Assets.xcassets */,
-				5CB168F82178F78A00980C94 /* LaunchScreen.storyboard */,
 				5CB168FB2178F78A00980C94 /* Info.plist */,
+				5CB1692A217C945E00980C94 /* Model */,
+				5CB1692B217C947200980C94 /* View */,
+				5CB1692C217C948F00980C94 /* Controller */,
+				5CB16929217C944000980C94 /* Extensions */,
 			);
 			path = "Hotel Manzana";
+			sourceTree = "<group>";
+		};
+		5CB16929217C944000980C94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5CB16927217C93ED00980C94 /* KeyboardHide.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5CB1692A217C945E00980C94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CB16903217AF81F00980C94 /* Registration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CB1692B217C947200980C94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CB16901217AF7F300980C94 /* Main.storyboard */,
+				5CB168F82178F78A00980C94 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CB1692C217C948F00980C94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5CB16905217B1B6000980C94 /* AddRegistrationTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB16928217C93ED00980C94 /* KeyboardHide.swift in Sources */,
 				5CB16906217B1B6000980C94 /* AddRegistrationTableViewController.swift in Sources */,
 				5CB16904217AF81F00980C94 /* Registration.swift in Sources */,
 				5CB168F02178F78600980C94 /* AppDelegate.swift in Sources */,
