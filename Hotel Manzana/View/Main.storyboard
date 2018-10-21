@@ -367,6 +367,7 @@
                         <outlet property="childrenNumberLabel" destination="HdV-Z1-t7L" id="1Tv-JV-VXJ"/>
                         <outlet property="emailTextField" destination="DDL-XV-Sjl" id="kbj-j7-qCn"/>
                         <outlet property="firstNameTextField" destination="UPC-Q0-MpS" id="AWJ-Yg-Qpw"/>
+                        <outlet property="isWifiNeeded" destination="Ig9-8U-UYa" id="OQh-Qu-IBP"/>
                         <outlet property="lastNameTextField" destination="XQO-Rk-0CZ" id="sPG-Xr-Ow1"/>
                         <outlet property="roomTypeLabel" destination="gf4-53-eUz" id="LsX-nj-rQY"/>
                         <outlet property="wifiCostLabel" destination="0JR-o4-cwY" id="r41-nJ-HgQ"/>

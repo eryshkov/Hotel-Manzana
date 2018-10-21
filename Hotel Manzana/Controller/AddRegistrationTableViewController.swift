@@ -23,9 +23,10 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBOutlet weak var wifiCostLabel: UILabel!
     @IBOutlet weak var roomTypeLabel: UILabel!
     
+    @IBOutlet weak var isWifiNeeded: UISwitch!
     
     
-    
+    let wifiCostPerDay = 10
     let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
     let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section: 1)
     

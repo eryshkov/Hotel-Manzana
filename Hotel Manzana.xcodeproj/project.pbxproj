@@ -14,6 +14,8 @@
 		5CB16904217AF81F00980C94 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16903217AF81F00980C94 /* Registration.swift */; };
 		5CB16906217B1B6000980C94 /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16905217B1B6000980C94 /* AddRegistrationTableViewController.swift */; };
 		5CB16928217C93ED00980C94 /* KeyboardHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16927217C93ED00980C94 /* KeyboardHide.swift */; };
+		5CB1692E217CAC9A00980C94 /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB1692D217CAC9A00980C94 /* RoomType.swift */; };
+		5CB16930217CACEE00980C94 /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB1692F217CACEE00980C94 /* Rooms.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		5CB16903217AF81F00980C94 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		5CB16905217B1B6000980C94 /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
 		5CB16927217C93ED00980C94 /* KeyboardHide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHide.swift; sourceTree = "<group>"; };
+		5CB1692D217CAC9A00980C94 /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
+		5CB1692F217CACEE00980C94 /* Rooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				5CB16903217AF81F00980C94 /* Registration.swift */,
+				5CB1692D217CAC9A00980C94 /* RoomType.swift */,
+				5CB1692F217CACEE00980C94 /* Rooms.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 			files = (
 				5CB16928217C93ED00980C94 /* KeyboardHide.swift in Sources */,
 				5CB16906217B1B6000980C94 /* AddRegistrationTableViewController.swift in Sources */,
+				5CB16930217CACEE00980C94 /* Rooms.swift in Sources */,
+				5CB1692E217CAC9A00980C94 /* RoomType.swift in Sources */,
 				5CB16904217AF81F00980C94 /* Registration.swift in Sources */,
 				5CB168F02178F78600980C94 /* AppDelegate.swift in Sources */,
 			);
