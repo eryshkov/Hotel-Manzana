@@ -17,6 +17,7 @@
 		5CB1692E217CAC9A00980C94 /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB1692D217CAC9A00980C94 /* RoomType.swift */; };
 		5CB16930217CACEE00980C94 /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB1692F217CACEE00980C94 /* Rooms.swift */; };
 		5CB16932217CDA0800980C94 /* RoomSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB16931217CDA0800980C94 /* RoomSelectTableViewController.swift */; };
+		5CEA703521B19675002DE87E /* IMG_78B46FEA399E-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA703421B19675002DE87E /* IMG_78B46FEA399E-1.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5CB1692D217CAC9A00980C94 /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
 		5CB1692F217CACEE00980C94 /* Rooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
 		5CB16931217CDA0800980C94 /* RoomSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSelectTableViewController.swift; sourceTree = "<group>"; };
+		5CEA703421B19675002DE87E /* IMG_78B46FEA399E-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMG_78B46FEA399E-1.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		5CB168E32178F78500980C94 = {
 			isa = PBXGroup;
 			children = (
+				5CEA703321B1965F002DE87E /* screens */,
 				5CB168EE2178F78600980C94 /* Hotel Manzana */,
 				5CB168ED2178F78500980C94 /* Products */,
 			);
@@ -111,6 +114,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		5CEA703321B1965F002DE87E /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				5CEA703421B19675002DE87E /* IMG_78B46FEA399E-1.jpeg */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,6 +182,7 @@
 			files = (
 				5CB16902217AF7F300980C94 /* Main.storyboard in Resources */,
 				5CB168FA2178F78A00980C94 /* LaunchScreen.storyboard in Resources */,
+				5CEA703521B19675002DE87E /* IMG_78B46FEA399E-1.jpeg in Resources */,
 				5CB168F72178F78A00980C94 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
